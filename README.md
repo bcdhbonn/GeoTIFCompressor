@@ -1,7 +1,9 @@
 # What is GeoTif Compressor
 
-This code combines [gdal](https://gdal.org/) raster programs to lossy compress GeoTifs.
-The compressed version of the GeoTif have round about 5% of the original size.
+This code converts a GeoTif in rgb format to about 5% of its original size by combining [gdal](https://gdal.org/) raster programs.
+The original ground sampling distance is kept. However, fuzzy image edges may occur due to the applied jpeg lossy compression.
+All meta data information is transferred. Image pyramids can be created and stored internally in the image.
+The original file will not be overwritten if not explicitly defined.
 
 # Use of this code
 
